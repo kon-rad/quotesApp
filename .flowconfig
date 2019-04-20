@@ -1,0 +1,12 @@
+[ignore]
+
+[include]
+./app
+
+[libs]
+
+[lints]
+
+[options]
+module.name_mapper='^*' ->'<PROJECT_ROOT>/app'
+[strict]
