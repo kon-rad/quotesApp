@@ -5,9 +5,6 @@ import { fetchQuote } from '../actions';
 class QuoteBox extends Component {
   constructor(props) {
     super(props);
-    // this.state = {
-    //   quote: ''
-    // }
   }
   render() {
     return (
