@@ -1,10 +1,8 @@
 import { FETCH_QUOTE } from './types';
-import quotesApi from '../apis/quotesApi';
+import $ from 'jquery';
 
 export const fetchQuote = () => async (dispatch) => {
-  console.log('fetchQuote');
-  const response = await quotesApi.get('/');
-  console.log('response', response);
+  const response = await $.getJSON('http://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?');
 
-  dispatch({ type: FETCH_QUOTE, payload: response.data });
+  dispatch({ type: FETCH_QUOTE, payload: response });
 };

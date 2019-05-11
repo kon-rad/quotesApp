@@ -4,11 +4,35 @@
     --color3: rgba(255, 255, 255, 1);
     --color4: rgba(203, 243, 240, 1);
     --color5: rgba(46, 196, 182, 1);
+    --color5_dark: #1A5347;
 }
 body {
     background-color: var(--color1);
+    font-family: 'Raleway', sans-serif;
 }
-.wrapper {
-    margin-top: 100px;
+.card__wrapper {
     text-align: center;
+    width: 700px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: var(--color4);
+}
+.btn {
+    background-color: var(--color5);
+}
+.btn:hover, .btn:active, .btn:visited {
+    background-color: var(--color5_dark);
+}
+.card__display {
+    min-height: 240px;
+}
+.card__buttons {
+    display: flex;
+    justify-content: space-around;
+}
+.card__text {
+    font-size: 24px;
+}
+.card__author {
+    font-size: 18px;
 }
